@@ -1,0 +1,13 @@
+prefix=/odm
+bindir=/odm/bin
+libdir=${prefix}//odm/lib
+localstatedir=/odm/var
+includedir=${prefix}//odm/include
+rootfsmountdir=/odm/lib/lxc/rootfs
+
+Name: lxc
+Description: linux container tools
+Version: 2.0.7
+URL: http://linuxcontainers.org
+Libs: -L${libdir} -llxc -lutil
+Cflags: -I${includedir}

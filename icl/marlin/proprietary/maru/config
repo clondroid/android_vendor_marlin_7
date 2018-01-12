@@ -1,0 +1,63 @@
+### For process namespace settings
+#lxc.namespace.pid=con1
+
+lxc.network.type = veth
+###lxc.network.type = empty
+lxc.network.link = br0 
+lxc.network.flags = up 
+##lxc.arch = arm
+#lxc.tty = 4 
+#lxc.pts = 1024
+lxc.utsname = con1
+
+#lxc.se_context = u:r:init:s0
+
+#lxc.network.hwaddr = 00:16:3e:08:3c:01
+lxc.network.ipv4 = 192.168.0.2
+lxc.network.ipv4.gateway = 192.168.0.3
+
+#lxc.rootfs = /data/maru/con1/0.rootfs
+#lxc.rootfs = /data/maru/con1/rootfs
+lxc.rootfs.path = /dev/block/loop0
+lxc.rootfs.mount = /data/maru/con1/lxc-rootfs.mount
+
+
+### For CGROUP settings
+lxc.mount.auto = proc sys cgroup
+lxc.mount.auto = proc:rw sys:rw cgroup-full:rw
+
+### Limit Memory size
+#lxc.cgroup.memory.limit_in_bytes = 512M
+#lxc.cgroup.memory.memsw.limit_in_bytes = 512M
+
+#lxc.mount.entry = proc proc proc nodev,noexec,nosuid 0 0
+#lxc.mount.entry = sysfs sys sysfs defaults 0 0
+#lxc.mount.entry = /sys/fs/fuse/connections sys/fs/fuse/connections none bind,optional 0 0
+
+# HACK to disable SELinux
+#lxc.mount.entry = /sys/fs/selinux sys/fs/selinux none bind,ro
+
+
+
+#lxc.mount.entry=/data/maru/con1/con-data /data/maru/con1/rootfs/data none bind 0 0 
+#lxc.mount.entry=/data/maru/con-share/ethernet /data/maru/con1/rootfs/data/misc/ethernet none bind 0 0
+
+
+ 
+#lxc.mount.entry=/system /data/maru/con1/rootfs/system none bind 0 0  
+#lxc.mount.entry=/data/maru/con-share/etc /data/maru/con1/rootfs/system/etc none bind 0 0
+#lxc.mount.entry=/data/maru/con-share/ethernet /data/maru/con1/rootfs/data/misc/ethernet none bind 0 0
+
+#lxc.mount.entry=/dev/conbinder1 /data/maru/con1/rootfs/dev/binder none bind 0 0
+
+#lxc.mount.entry=/sys /data/maru/con1/rootfs/sys none bind 0 0
+#lxc.mount.entry=/proc /data/maru/con1/rootfs/proc none bind 0 0
+#lxc.mount.entry=/dev /data/maru/con1/rootfs/dev none bind 0 0
+#lxc.mount.entry=/data/share /data/maru/con1/rootfs/data/share none bind 0 0 
+
+###lxc.cap.keep =  CAP_WAKE_ALARM
+
+
+#lxc.id_map = u 0 100000 65536
+#lxc.id_map = g 0 100000 65536
+
