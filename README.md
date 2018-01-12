@@ -1,10 +1,10 @@
 ## Preface
 
-This repository contains ICL vendor specific makefiles and binaries clone with some essential goole and qcom vendor specific makefiles
+This repository contains ICL vendor specific makefiles and binaries alone with some essential google and qcom vendor specific makefiles.
 
 ## Android vendor specific driver binaries
 
-Du to license issues, the essential Android vendor specific driver binaries for Pixel XL are not included in this repository, you can down these files on [Pixel XL binaries for Android 7.1.2 \(NJH47B\)](https://developers.google.com/android/drivers#marlinnjh47b) and follow the steps below to complete the preparation of the vendor specific binary 
+Due to license issues, the essential Android vendor specific driver binaries for Pixel XL are not included in this repository, you can down these files on [Pixel XL binaries for Android 7.1.2 \(NJH47B\)](https://developers.google.com/android/drivers#marlinnjh47b) and follow the steps below to complete the preparation of the vendor specific binaries.
 
 Before we get started, for easier describe how to extract and locate vendor specific driver binaries to the right places, the following is my directory structure:
 
