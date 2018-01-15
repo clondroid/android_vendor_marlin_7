@@ -26,7 +26,7 @@ Before we get started, for easier describe how to extract and locate vendor spec
 ```shell
 # Download vendor specific birnaies into ~/cba/Pixel-XL-binaries-for-Android-7.1.2-NJH47B
 
-$ cd /cba/Pixel-XL-binaries-for-Android-7.1.2-NJH47B
+$ cd ~/cba/Pixel-XL-binaries-for-Android-7.1.2-NJH47B
 
 # extract google_devices-marlin-njh47b-cd5b463a.tgz and qcom-marlin-njh47b-c8f9d81f.tgz
 # execute extract-google_devices-marlin.sh and extract-qcom-marlin.sh which will extract themselves into ./vendor
@@ -34,7 +34,7 @@ $ cd /cba/Pixel-XL-binaries-for-Android-7.1.2-NJH47B
 # copy files to ~/cba/cba-aosp-marlin-7.1.2_r17/vendor
 $ cp -a vendor/google_devices/marlin/proprietary/vendor.img \
     ~/cba/cba-aosp-marlin-7.1.2_r17/vendor/google_devices/marlin/proprietary/vendor.img
-$ cp -a vendor/qcom ~/cba/aosp-marlin-7.1.2_r17/vendor/
+$ cp -a vendor/qcom ~/cba/cba-aosp-marlin-7.1.2_r17/vendor/
 ```
 
 ## Licensing
