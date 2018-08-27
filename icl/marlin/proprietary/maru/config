@@ -13,8 +13,8 @@ lxc.utsname = con1
 #lxc.se_context = u:r:init:s0
 
 #lxc.network.hwaddr = 00:16:3e:08:3c:01
-lxc.network.ipv4 = 192.168.0.2
-lxc.network.ipv4.gateway = 192.168.0.3
+lxc.network.ipv4 = 192.168.9.2
+lxc.network.ipv4.gateway = 192.168.9.1
 
 #lxc.rootfs = /data/maru/con1/0.rootfs
 #lxc.rootfs = /data/maru/con1/rootfs

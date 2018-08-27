@@ -58,7 +58,7 @@ if [ -n "$FOUND" ] ; then
 else                                                                          
   busybox brctl addbr br0 
   ifconfig br0 up                                                        
-  ifconfig br0 192.168.0.3
+  ifconfig br0 192.168.9.1
 fi 
 
 busybox brctl show
